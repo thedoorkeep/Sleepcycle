@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Sleep Cycle</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div id="container">
+      <a href="index.html"><img id="icon" src="icon.png"></a>
+      <h2>
+        It is now <span id="now">the time</span>
+      </h2>
+      <h3>
+        your alarm is set for 
+      </h3>
+        <p id="cycleName">
+            one cycle
+        </p>
+          <h1 id="alarmOne">
+            one
+          </h1>
+<!-- 
+      <button id="alarmButton" onclick="alarmFunction()">
+        Start alarm
+      </button> -->
+      <p id="footer">
+        sleep cycle works by setting your alarm to wake you up at the end of a REM sleep cycle, ensuring you have a restful sleep.
+      </p>
+    </div>
+    <script>
+      var alarmVar;
+
+      function alarmFunction() {
+          alarmVar = setTimeout(alertFunc, 3000);
+      }
+
+      function alertFunc() {
+        alert("Time to wake up!");
+      }
+</script>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.15.0/lodash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment.min.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>

@@ -13,14 +13,18 @@ body {
   justify-content: center;
   line-height: 1;
   min-height: 100vh;
-  overflow: hidden;
   text-align: center;
   text-transform: uppercase;
 }
 
+#icon {
+  max-width: 5%;
+  margin-top: 20px;
+}
 
 h1 {
   font-size: 40px;
+  margin-top: -10px;
 }
 h2 {
   font-size: 20px;
@@ -30,6 +34,7 @@ h2 {
 h3 {
   font-size: 12px;
   letter-spacing: .07em;
+  margin-top: -15px;
 }
 
 p {
@@ -38,9 +43,21 @@ p {
   line-height: 1.5em;
 }
 
+#cycleName {
+  margin-top: 40px;
+  font-size: 8px;
+}
+
+#footer {
+    max-width: 70%;
+    margin: auto;
+    margin-bottom: 100px;
+  }
+
 @media (min-width: 768px) {
   h1 {
     font-size: 80px;
+    margin-top: -10px;
   }
 
   h2 {
@@ -51,40 +68,46 @@ p {
   h3 {
     font-size: 22px;
     letter-spacing: .07em;
+    margin-top: -30px;
   }
 
   p {
     font-size: 14px;
     letter-spacing: .1em;
   }
+
+  #cycleName {
+  margin-top: 0px;
+  font-size: 10px;
+  }
+
 }
 
 a {
-  color: magenta;
-  font-weight: 600;
+  color: white;
   text-decoration: none;
 }
 
-/*body::before {
-  background: rgba(0,0,0,.2);
-  content: "";
-  height: 100vh;
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}*/
+a:hover {
+  color: yellow;
+}
 
 #container {
   position: relative;
 }
 
+#alarmButton {
+  margin-top: -100px;
+  margin-bottom: 40px;
+}
+
 button,
 input {
   box-sizing: border-box;
-  color: inherit;
+  color: none;
   font-family: inherit;
   font-size: inherit;
+  text-transform: uppercase;
 }
 button { cursor: pointer; }
 input {
@@ -96,8 +119,6 @@ input:focus {
   outline: none;
 }
 
-img,
-video { max-width: 100%; }
 
 
 
